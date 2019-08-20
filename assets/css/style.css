@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap');
+ body {
+     margin: 0;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 14px;
+     line-height: 1.4;
+     color: #303030;
+     background-color: #fff;
+     font-weight: normal;
+}
+ ul{
+     list-style: none;
+     margin: 0;
+     padding: 0;
+}
+
+/*////////////icon wrap */
+
+ .navbar{
+     background-color: #efefef;
+     -webkit-box-shadow: 0px 15px 10px -15px rgba(0, 0, 0, 0.3);
+     box-shadow: 0px 15px 10px -15px rgba(0, 0, 0, 0.3);
+     padding: 11px 0;
+}
+ .navbar .container-fluid{
+     width: 95%;
+}
+ .navbar-brand img{
+     width: 167px;
+}
+ .navbar-brand{
+     margin-left: 35px;
+}
+ .nicon img{
+     width: 50px;
+}
+ .heading h2{
+     font-size: 34px;
+     font-weight: 300;
+     color: #5b5b5b;
+     margin-bottom: 0;
+}
+ .heading p{
+     font-size: 12px;
+     color: #808080;
+     font-weight: 600;
+}
+ .section {
+     padding: 80px 0;
+}
+ .section-top {
+     padding: 80px 0 0;
+}
+ .section-bottom {
+     padding: 0 0 80px 0;
+}
+ .section .container-fluid{
+     width: 80%;
+}
+
+/*////////////icon wrap */
+
+ .icon-section{
+     display: flex;
+     flex-wrap: nowrap;
+     justify-content: space-between;
+}
+ .icon-section li{
+     display: inline-block;
+     padding-right: 25px;
+     text-align: left;
+}
+ .icon-img {
+     float: left;
+}
+ .icon-img img{
+     width: 50px;
+}
+ .icon-content{
+     float: left;
+}
+ .icon-content h4{
+     font-size: 31px;
+     color: #4d4d4d;
+     font-weight: normal;
+     margin-bottom: 0;
+}
+ .icon-content p{
+     font-size: 12px;
+     color: #808080;
+     font-weight: 400;
+     margin-top: -8px;
+}
+
+/*////////////fund wrap */
+
+ .fund-list a{
+     color: #666666;
+     text-decoration: none;
+}
+ .fund-box{
+     border: 1px solid #ddd;
+     position: relative;
+     overflow: hidden;
+     margin-bottom: 10px;
+}
+ .fund-content{
+     width: 85%;
+     float: left;
+     padding: 11px;
+}
+ .fund-box h4{
+     font-size: 15px;
+     margin-bottom: 15px;
+}
+ .fund-content span{
+     font-size: 13px;
+     font-weight: normal;
+     width: 200px;
+     float: left;
+}
+ .fund-amt{
+     float: left;
+     width: 15%;
+     height: 100%;
+     font-size: 23px;
+     padding: 22px 5px;
+     text-align: center;
+}
+ .fund-list li .fund-box{
+     border-left: 1px solid #ddd;
+}
+ .gpoints i{
+     font-size: 11px;
+     padding-right: 11px;
+}
+ .fund-list li.active:nth-child(3n+1) {
+     border-left: 5px solid #14A288!important;
+}
+ .fund-list li:nth-child(3n+1) i{
+     color: #14A288;
+}
+ .fund-list li:nth-child(3n+1) .fund-amt{
+     background-color: #14A288;
+     color:#fff;
+}
+ .fund-list li.active:nth-child(3n+2){
+     border-left: 5px solid #13bc9c;
+}
+ .fund-list li:nth-child(3n+2) i{
+     color: #13bc9c;
+}
+ .fund-list li:nth-child(3n+2) .fund-amt{
+     background-color: #13bc9c;
+     color:#fff;
+}
+ .fund-list li.active:nth-child(3n+3){
+     border-left: 5px solid #425b77;
+}
+ .fund-list li:nth-child(3n+3) i{
+     color: #425b77;
+}
+ .fund-list li:nth-child(3n+3) .fund-amt{
+     background-color: #425b77;
+     color:#fff;
+}
+ .fund-list .small-text{
+     text-align: right;
+}
+ .btn-prime {
+     background-color: #12d6b0;
+     color: #fff;
+     padding: 10px 30px;
+     border-radius: 0;
+     text-transform: uppercase;
+     font-size: 15px;
+     font-weight: 500;
+}
+ .btn-prime:hover, .btn-prime:focus {
+     color: #fff;
+}
+
+/*////////////graph sec */
+
+ .graph-sec{
+     text-align: center;
+     padding: 0 0 35px 0;
+     position: relative;
+     z-index: 1;
+     width: 280px;
+}
+ .graph-sec .graph-content{
+     color: #303030;
+     height: 240px;
+     width: 240px;
+     padding: 55px 28px;
+     position: relative;
+     transition: all 0.3s;
+}
+ .graph-sec .graph-content:before{
+     content: '';
+     width: 92%;
+     height: 92%;
+     border: 13px solid #425b77;
+     border-left: 13px solid #13bc9c;
+     border-bottom: 13px solid #13bc9c;
+     border-radius: 50% 50%;
+     transform: translateX(-50%) translateY(-50%) rotate(44deg);
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transition: all 0.3s;
+}
+ .graph-sec .graph-content:after{
+     content: '';
+     width: 115%;
+     height: 108%;
+     border: 16px solid transparent;
+     border-left: 16px solid rgba(19, 188, 156, 0.61);
+     border-bottom: 16px solid transparent;
+     border-radius: 50% 50%;
+     transform: translateX(-44%) translateY(-44%) rotate(39deg);
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transition: all 0.3s;
+}
+ .graph-sec .graph-value{
+     font-size: 24px;
+     display: block;
+}
+ .graph-sec .color1{
+     color: #12d6b0 
+}
+ .graph-sec .color2{
+     color: #425b77 
+}
+ .graph-sec h3{
+     font-size: 15px;
+     font-weight: 600;
+     text-transform: uppercase;
+     margin: 0 0 5px 0;
+     transition:all 0.3s;
+}
+ .small-text{
+     font-size: 9px;
+     text-align: left;
+}
+
+/*////////////responsive */
+
+ @media(max-width: 991px){
+     .icon-section{
+         display: block;
+    }
+     .graph-sec{
+         margin: 0 auto;
+         width: 236px;
+         overflow: hidden;
+    }
+     .nicon{
+         position: absolute;
+         width: 24px;
+         left: 10px;
+         right: 10px;
+         top: 26px;
+    }
+     .nicon img {
+         width: 30px;
+    }
+     .navbar-brand {
+         margin-left: 0;
+         width: 100%;
+         text-align: center;
+         margin-right: 0;
+    }
+     .navbar .container-fluid {
+         width: 80%;
+    }
+     .section {
+         padding: 30px 0;
+    }
+     .section .container-fluid {
+         width: 100%;
+    }
+     .heading h2{
+         font-size: 26px;
+    }
+     .fund-content{
+         width: 75%;
+    }
+     .fund-amt{
+         width: 25%;
+         font-size: 15px;
+    }
+     .icon-section li{
+         width: 100%;
+         padding-right: 0px;
+         text-align: center;
+         overflow: hidden;
+         margin-bottom: 15px;
+         border-bottom: 1px solid #f6f6f6;
+    }
+     .icon-content h4{
+         font-size: 30px;
+    }
+     .icon-content p{
+         margin-top: -3px;
+    }
+     .icon-content,.icon-content,.icon-img{
+         float: none;
+    }
+}
